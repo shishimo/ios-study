@@ -1,0 +1,3 @@
+[submodule "vendor/ViewDeck"]
+	path = vendor/ViewDeck
+	url = https://github.com/Inferis/ViewDeck.git
