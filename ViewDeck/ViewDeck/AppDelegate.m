@@ -7,15 +7,42 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "TableViewController.h"
+#import "IIViewDeckController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = [self generateControllerStack];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
-							
+
+- (IIViewDeckController*)generateControllerStack
+{
+    UIStoryboard *mystoryboard =[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    TableViewController *leftController = [mystoryboard instantiateViewControllerWithIdentifier:@"LeftView"];
+    
+    ViewController *centerController = [mystoryboard instantiateViewControllerWithIdentifier:@"CenterView"];
+    
+    IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController leftViewController:leftController                                                                               rightViewController:nil];
+    
+    deckController.leftSize = 160;
+    deckController.panningMode = IIViewDeckNoPanning;
+    
+    [deckController disablePanOverViewsOfClass:NSClassFromString(@"_UITableViewHeaderFooterContentView")];
+    
+    return deckController;
+}
+
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

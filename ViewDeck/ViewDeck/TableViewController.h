@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewController.h
 //  ViewDeck
 //
 //  Created by shishimo on 2014/04/27.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-- (IBAction)clickMenuButton:(id)sender;
+@interface TableViewController : UITableViewController
 
 @end

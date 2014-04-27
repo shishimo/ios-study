@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "IIViewDeckController.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"left" style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +29,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)clickMenuButton:(id)sender {
+    [self.viewDeckController toggleLeftViewAnimated:YES];
+}
 @end

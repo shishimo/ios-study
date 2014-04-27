@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8B75732190CC8CB00E377D0 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B75731190CC8CB00E377D0 /* TableViewController.m */; };
 		C8E0FE98190CC21500EBFA78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E0FE97190CC21500EBFA78 /* Foundation.framework */; };
 		C8E0FE9A190CC21500EBFA78 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E0FE99190CC21500EBFA78 /* CoreGraphics.framework */; };
 		C8E0FE9C190CC21500EBFA78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E0FE9B190CC21500EBFA78 /* UIKit.framework */; };
@@ -21,6 +22,9 @@
 		C8E0FEB9190CC21500EBFA78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E0FE9B190CC21500EBFA78 /* UIKit.framework */; };
 		C8E0FEC1190CC21500EBFA78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8E0FEBF190CC21500EBFA78 /* InfoPlist.strings */; };
 		C8E0FEC3190CC21500EBFA78 /* ViewDeckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E0FEC2190CC21500EBFA78 /* ViewDeckTests.m */; };
+		C8E0FED4190CC3FB00EBFA78 /* IISideController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E0FECF190CC3FB00EBFA78 /* IISideController.m */; };
+		C8E0FED5190CC3FB00EBFA78 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E0FED1190CC3FB00EBFA78 /* IIViewDeckController.m */; };
+		C8E0FED6190CC3FB00EBFA78 /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E0FED3190CC3FB00EBFA78 /* IIWrapController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C8B75730190CC8CB00E377D0 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		C8B75731190CC8CB00E377D0 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		C8E0FE94190CC21500EBFA78 /* ViewDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E0FE97190CC21500EBFA78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C8E0FE99190CC21500EBFA78 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +59,12 @@
 		C8E0FEBE190CC21500EBFA78 /* ViewDeckTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ViewDeckTests-Info.plist"; sourceTree = "<group>"; };
 		C8E0FEC0190CC21500EBFA78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C8E0FEC2190CC21500EBFA78 /* ViewDeckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewDeckTests.m; sourceTree = "<group>"; };
+		C8E0FECE190CC3FB00EBFA78 /* IISideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IISideController.h; sourceTree = "<group>"; };
+		C8E0FECF190CC3FB00EBFA78 /* IISideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IISideController.m; sourceTree = "<group>"; };
+		C8E0FED0190CC3FB00EBFA78 /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
+		C8E0FED1190CC3FB00EBFA78 /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
+		C8E0FED2190CC3FB00EBFA78 /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
+		C8E0FED3190CC3FB00EBFA78 /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +94,7 @@
 		C8E0FE8B190CC21500EBFA78 = {
 			isa = PBXGroup;
 			children = (
+				C8E0FECC190CC3D300EBFA78 /* Library */,
 				C8E0FE9D190CC21500EBFA78 /* ViewDeck */,
 				C8E0FEBC190CC21500EBFA78 /* ViewDeckTests */,
 				C8E0FE96190CC21500EBFA78 /* Frameworks */,
@@ -119,6 +132,8 @@
 				C8E0FEAD190CC21500EBFA78 /* ViewController.m */,
 				C8E0FEAF190CC21500EBFA78 /* Images.xcassets */,
 				C8E0FE9E190CC21500EBFA78 /* Supporting Files */,
+				C8B75730190CC8CB00E377D0 /* TableViewController.h */,
+				C8B75731190CC8CB00E377D0 /* TableViewController.m */,
 			);
 			path = ViewDeck;
 			sourceTree = "<group>";
@@ -150,6 +165,27 @@
 				C8E0FEBF190CC21500EBFA78 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C8E0FECC190CC3D300EBFA78 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C8E0FECD190CC3FB00EBFA78 /* ViewDeck */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		C8E0FECD190CC3FB00EBFA78 /* ViewDeck */ = {
+			isa = PBXGroup;
+			children = (
+				C8E0FECE190CC3FB00EBFA78 /* IISideController.h */,
+				C8E0FECF190CC3FB00EBFA78 /* IISideController.m */,
+				C8E0FED0190CC3FB00EBFA78 /* IIViewDeckController.h */,
+				C8E0FED1190CC3FB00EBFA78 /* IIViewDeckController.m */,
+				C8E0FED2190CC3FB00EBFA78 /* IIWrapController.h */,
+				C8E0FED3190CC3FB00EBFA78 /* IIWrapController.m */,
+			);
+			path = ViewDeck;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +285,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E0FED4190CC3FB00EBFA78 /* IISideController.m in Sources */,
 				C8E0FEAE190CC21500EBFA78 /* ViewController.m in Sources */,
+				C8E0FED5190CC3FB00EBFA78 /* IIViewDeckController.m in Sources */,
 				C8E0FEA8190CC21500EBFA78 /* AppDelegate.m in Sources */,
 				C8E0FEA4190CC21500EBFA78 /* main.m in Sources */,
+				C8B75732190CC8CB00E377D0 /* TableViewController.m in Sources */,
+				C8E0FED6190CC3FB00EBFA78 /* IIWrapController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +496,7 @@
 				C8E0FEC8190CC21500EBFA78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8E0FEC9190CC21500EBFA78 /* Build configuration list for PBXNativeTarget "ViewDeckTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +505,7 @@
 				C8E0FECB190CC21500EBFA78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
