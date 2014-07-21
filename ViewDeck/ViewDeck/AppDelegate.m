@@ -35,7 +35,7 @@
     IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController leftViewController:leftController                                                                               rightViewController:nil];
     
     deckController.leftSize = 160;
-    deckController.panningMode = IIViewDeckNoPanning;
+    //deckController.panningMode = IIViewDeckNoPanning;
     
     [deckController disablePanOverViewsOfClass:NSClassFromString(@"_UITableViewHeaderFooterContentView")];
     

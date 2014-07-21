@@ -14,6 +14,15 @@
 
 @implementation ViewController
 
+-(id) initWithCoder:(NSCoder *)aDecoder
+{
+    if ((self=[super initWithCoder:aDecoder]))
+    {
+    }
+    NSLog(@"called");
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -43,6 +52,16 @@
     cell.textLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //[tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ViewController *vc = [mystoryboard instantiateViewControllerWithIdentifier:@"ViewController"];
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
