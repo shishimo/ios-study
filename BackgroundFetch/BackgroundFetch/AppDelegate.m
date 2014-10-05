@@ -17,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    // バックグラウンドフェッチを最小間隔で要求
+    //[[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
+
+    NSTimeInterval interval = 5.0;
+    [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:interval];
+
     return YES;
 }
 
@@ -40,6 +47,14 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler
+{
+    NSLog(@"Background Fetched");
+
+    // ダウンロード完了
+    completionHandler(UIBackgroundFetchResultNoData);
 }
 
 @end
