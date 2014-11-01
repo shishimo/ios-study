@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+- (IBAction)pushFilterButton:(id)sender;
+- (IBAction)pushSaveButton:(id)sender;
+- (IBAction)pushBrendButton:(id)sender;
 
 @end
 
